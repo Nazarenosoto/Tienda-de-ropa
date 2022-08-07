@@ -128,7 +128,7 @@
   color: #4585fa;
   font-size: 13px;
   position: relative;
-  animation-delay: -0.18s;
+  animation-delay: -0.16s;
 }
 
 .loader::before, .loader::after {
@@ -139,7 +139,7 @@
 
 .loader::before {
   left: -3.5em;
-  animation-delay: -0.36s;
+  animation-delay: -0.32s;
 }
 
 .loader::after {
