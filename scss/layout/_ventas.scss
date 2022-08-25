@@ -1,0 +1,126 @@
+.boddy{
+    background-color: rgb(253, 253, 253);
+}
+/*Tarjetas*/ 
+.producto{
+    text-align: center;
+    border-radius: 6px;
+    max-width: 180px;
+    box-shadow: 0 0 0.1em rgba(0,0,0, 0.2);
+    background-color: rgb(245, 245, 245);
+    cursor: pointer;
+    &:hover{
+        box-shadow:  0 0 1.2em rgba(0,0,0, 0.2);
+        transition-property: box-shadow;
+        transition-duration: 0.3s;
+    }
+    img{
+        border-radius: 10px;
+        width: 170px;
+    }
+}
+.informacion{
+    border-top: 1px solid rgb(230, 230, 230);
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    a{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            transition: all .3s;
+            color: rgb(52, 131, 250);
+        }
+    }
+}
+.informacion * + *{
+    margin-bottom: 0.5rem;
+}
+
+.tipo-envio{
+    border-radius: 3px;
+    background-color: rgb(52, 131, 250);
+    color: rgb(255, 255, 255);
+    font-weight: 600;   
+}
+
+.precio{
+    font-size: 1.5rem;
+}
+
+.costo-envio{
+    color: rgb(0, 166, 80);
+}
+
+.prenda{
+    font-weight: 300;
+}
+
+
+.tipo-envio, .calificacion > span:last-child{
+    font-size: 0.8em;
+}
+
+.ppp2{
+    font-size: 55px;
+    color: rgb(19, 168, 255);
+}
+
+.contenedor__card{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 600px){
+    .producto{
+        margin-left: 15px;
+        margin: 10px;
+    }
+}
+@media screen and (min-width: 410px){
+    .producto{
+        align-items: center;
+        margin-top: 10px;
+        margin: 2px;
+        box-shadow: none;
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+    &:hover{
+        box-shadow: none;
+        transition-property: none;
+        transition-duration: none;
+    }
+    }
+}
+@media screen and (min-width: 393px){
+    .producto{
+        align-items: center;
+        margin-top: 10px;
+        margin: 2px;
+        box-shadow: none;
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+    &:hover{
+        box-shadow: none;
+        transition-property: none;
+        transition-duration: none;
+    }
+    }
+}
+@media screen and (min-width: 520px){
+    .producto{
+        align-items: center;
+        margin-top: 10px;
+        margin-left: 5px;
+        margin: 2px;
+        box-shadow: none;
+    background-color: rgb(250, 250, 250);
+    cursor: pointer;
+    &:hover{
+        box-shadow: none;
+        transition-property: none;
+        transition-duration: none;
+    }
+    }
+}
