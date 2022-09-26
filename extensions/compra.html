@@ -1,153 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta property="og:tipe" content="website">
-    <meta property="og:title" content="ROPA IMPORTADA | ENTRE RIOS - ARGENTINA">
-    <meta property="og:description" content="Explora por nuestra pagina..."> 
-    <meta property="og:image" content="img/Captura1"> 
-    <meta property="og:name" content="Tienda de ropa online"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/plane-alt-solid-24.png" type="image/x-icon">
-    <link rel="stylesheet" href="../scss/style.scss">
-    <link rel="stylesheet" href="../css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleJs.css">
+    <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Tienda online</title>
 </head>
-<body class="boddy">
-    <!--Efecto de carga-->
-    <div class="contenedor_loader">
-        <div class="loader"></div>
-    </div>
-    <!--Termina Efecto de carga-->
+<body>
 
-    <!--Empieza Nav-->
-    <nav class="container margin">
-        <div class="row">
-            <div class="col-md-12 col-lg-3 col-sm-12 logo">
-                <a href="../index.html"><img src="../img/hero/Captura.JPG" alt="Logo" class="img-logo"></a>
-            </div>
-            <div class="col-md-12 col-lg-6 col-sm-12">
-                        <form class="d-flex busqueda" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">🔍️</button>
-                        </form>
-            </div>
-            <div class="col-md-12 col-lg-2 col-sm-12 col-xs-12 opciones">
-                <a href="../extensions/registrar.html"><img src="../img/icons/persona (2).png" alt="Registrar"></a>
-                <a href="../extensions/favoritos.html"><img src="../img/icons/me-gusta.png" alt="Favoritos"></a>
-                <a href="../extensions/carrito.html"><img src="../img/icons/carrito-de-compras.png" alt="Carrito de compras"></a>
-            </div>
-        </div>
-    </nav>
-    <!--Termina nav-->
-
+    <header id="header" class="header">
+        <div class="containerr">
+            <div class="roww">
+                <div class="four colummns">
+                    <a href="../index.html"><img src="../img/hero/Captura.JPG" alt="Logo" width="210"></a>
+                </div>
+                <div class="two colummns u-pull-right">
+                    <ul>
+                        <li class="submenu">
+                                <img src="../img/icons/carrito-de-compras.png" width="40" id="img-carrito">
+                                <div id="carrito">
+                                        
+                                        <table id="lista-carrito" class="u-full-width">
+                                            <thead>
+                                                <tr>
+                                                    <th>Imagen</th>
+                                                    <th>Nombre</th>
+                                                    <th>Precio</th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody></tbody>
+                                        </table>
     
-    <!--Tarjetas de productos-->
-    <div class="container contenedor__card">
-    <div class="row">
-        <div class="producto col-md-4 col-lg-3 col-sm-1">
-            <img src="../img/cards/remera_nike_1.jpg" alt="Remera deportiva Nike" class="">
-            <div class="informacion">
-                <span class="tipo-envio">Envio con normalidad</span>
-                <span class="precio">$2800</span>
-                <span class="costo-envio">Envio gratis</span>
-                <span class="prenda">Remera deportiva Nike</span>
-                <div class="calificacion">
-                    <p class="ppp2">⋆⋆⋆⋆⋆</p>
+                                        <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+                                        <a href="#" class="button u-full-width">Comprar Productos</a>
+                                </div>
+                        </li>
+                    </ul>
                 </div>
-                <a href="#" class="aa">Comprar</a>
-                <a href="#" class="carrito">Agregar al carrito de compras</a>
-            </div>
+            </div> 
         </div>
-        <!--Segundo producto-->
-        <div class="producto col-md-4 col-lg-4 col-sm-1">
-            <img src="../img/cards/remera_adidas_1.jpg" alt="Remera deportiva Nike" class="">
-            <div class="informacion">
-                <span class="tipo-envio">Envio con normalidad</span>
-                <span class="precio">$3200</span>
-                <span class="costo-envio">Envio gratis</span>
-                <span class="prenda">Remera deportiva Adidas</span>
-                <div class="calificacion">
-                    <p class="ppp2">⋆⋆⋆⋆</p>
-                </div>
-                <a href="#" class="aa">Comprar</a>
-                <a href="#" class="carrito">Agregar al carrito</a>
-            </div>
-        </div>
-        <!--Tercer producto-->
-        <div class="producto col-md-4 col-lg-3 col-sm-1">
-            <img src="../img/cards/remera_puma_1.jpg" alt="Remera deportiva Nike" class=""> 
-            <div class="informacion">
-                <span class="tipo-envio">Envio con normalidad</span>
-                <span class="precio">$2800</span>
-                <span class="costo-envio">Envio gratis</span>
-                <span class="prenda">Remera deportiva Puma</span>
-                <div class="calificacion">
-                    <p class="ppp2">⋆⋆⋆⋆⋆</p>
-                </div>
-                <a href="#" class="aa">Comprar</a>
-                <a href="#" class="carrito">Agregar al carrito de compras</a>
-            </div>
-        </div>
-        <!--Cuarto producto-->
-        <div class="producto col-md-4 col-lg-4 col-sm-1">
-            <img src="../img/cards/buzo_simple_1.jpg" alt="Remera deportiva Nike" class=""> 
-            <div class="informacion">
-                <span class="tipo-envio">Envio con normalidad</span>
-                <span class="precio">$1500</span>
-                <span class="costo-envio">Costo de envio $500</span>
-                <span class="prenda">Buzo simple</span>
-                <div class="calificacion">
-                    <p class="ppp2">⋆⋆⋆⋆</p>
-                </div>
-                <a href="#" class="aa">Comprar</a>
-                <a href="#" class="carrito">Agregar al carrito de compras</a>
-            </div>
-        </div>
-        <!--Quinto producto-->
-        <div class="producto col-md-4 col-lg-3 col-sm-1">
-            <img src="../img/cards/buzo_simple_2.jpg" alt="Remera deportiva Nike" class="">
-            <div class="informacion">
-                <span class="tipo-envio">Envio con normalidad</span>
-                <span class="precio">$4500</span>
-                <span class="costo-envio">Envio gratis</span>
-                <span class="prenda">Buzo Bordado</span>
-                <div class="calificacion">
-                    <p class="ppp2">⋆⋆⋆⋆⋆</p>
-                </div>
-                <a href="#" class="aa">Comprar</a>
-                <a href="#" class="carrito">Agregar al carrito de compras</a>
-            </div>
-        </div>
-        <!--Sexto producto-->
-        <div class="producto col-md-4 col-lg-4 col-sm-1">
-            <img src="../img/cards/buzo_simple_3.jpg" alt="Remera deportiva Nike" class="">
-            <div class="informacion">
-                <span class="tipo-envio">Envio con normalidad</span>
-                <span class="precio">$5200</span>
-                <span class="costo-envio">Envio gratis</span>
-                <span class="prenda">Buzo Hollister</span>
-                <div class="calificacion">
-                    <p class="ppp2">⋆⋆⋆⋆⋆</p>
-                </div>
-                <a href="#" class="aa">Comprar</a>
-                <a href="#" class="carrito">Agregar al carrito de compras</a>
-            </div>
-        </div>
-        </div>
-    </div>
-    <!--Termina Tarjetas de productos-->
+    </header>
 
-    <!--Empieza el footer-->
-    <footer class="container-fluid footer_top">
-        <!--Empieza div row-->
+        <div id="lista-productos" class="containerr">
+            <div class="roww">
+                <div class="four colummns">
+                    <div class="card">
+                        <img src="../img/cards/remera_nike_1.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Remera Nike</h4>
+                            <p>Argentina</p>
+                            <img src="http://programacion.net/files/article/20160811120805_estrellas.png" width="50">
+                            <p class="precio">$6200  <span class="u-pull-right ">$4500</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four colummns">
+                        <div class="card">
+                            <img src="../img/cards/remera_adidas_1.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Remera Adidas</h4>
+                                <p>Argentina</p>
+                                <img src="http://programacion.net/files/article/20160811120805_estrellas.png" width="50">
+                                <p class="precio">$8400  <span class="u-pull-right ">$5000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="2">Agregar Al Carrito</a>
+                            </div>
+                        </div>
+                </div>
+                <div class="four colummns">
+                        <div class="card">
+                            <img src="../img/cards/remera_puma_1.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Remera Puma</h4>
+                                <p>Argentina</p>
+                                <img src="http://programacion.net/files/article/20160811120805_estrellas.png" width="50">
+                                <p class="precio">$5200  <span class="u-pull-right ">$3500</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="3">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+    
+            </div> <!--.row-->
+            <div class="roww">
+                <div class="four colummns">
+                    <div class="card">
+                        <img src="../img/cards/buzo_simple_1.jpg" class="imagen-curso u-full-width">
+                        <div class="info-card">
+                            <h4>Buzo Simple</h4>
+                            <p>Argentina</p>
+                            <img src="http://programacion.net/files/article/20160811120805_estrellas.png" width="50">
+                            <p class="precio">$8600  <span class="u-pull-right ">$6000</span></p>
+                            <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="4">Agregar Al Carrito</a>
+                        </div>
+                    </div> <!--.card-->
+                </div>
+                <div class="four colummns">
+                        <div class="card">
+                            <img src="../img/cards/buzo_simple_2.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Buzo Bordado</h4>
+                                <p>Argentina</p>
+                                <img src="http://programacion.net/files/article/20160811120805_estrellas.png" width="50">
+                                <p class="precio">$9200  <span class="u-pull-right ">$8500</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="5">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+                <div class="four colummns">
+                        <div class="card">
+                            <img src="../img/cards/buzo_simple_3.jpg" class="imagen-curso u-full-width">
+                            <div class="info-card">
+                                <h4>Buzo Hollister</h4>
+                                <p>Argentina</p>
+                                <img src="http://programacion.net/files/article/20160811120805_estrellas.png" width="50">
+                                <p class="precio">$14000  <span class="u-pull-right ">$10000</span></p>
+                                <a href="#" class="u-full-width button-primary button input agregar-carrito" data-id="6">Agregar Al Carrito</a>
+                            </div>
+                        </div> <!--.card-->
+                </div>
+            </div> <!--.row-->
+        </div>  
+    
+        <footer id="footer" class="footer">
+            <!--Empieza div row-->
         <div class="row p-4">
             <!--Div 1--> 
             <div class="col-xs-12 col-md-6 col-lg-3 titulo">
-                <a href="./index.html">NRS</a>
+                <h1><a href="./index.html" class="text-decoration-none">NRS</a></h1>
             </div>
             <!--Div 2-->
             <div class="col-xs-12 col-md-6 col-lg-3">
@@ -197,16 +179,9 @@
             <!--Termina div4-->
         </div>
         <!--Termina div row-->
-    </footer>
-    <!--Termina el footer-->
-            <!--Los scrips-->
-            <script src="../js/script.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
-                AOS.init();
-            </script>
-            <!--Terminan Los scrips-->
-            
+        </footer>
+        <script src="../js/carrito.js"></script>
+        <script src="../js/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
