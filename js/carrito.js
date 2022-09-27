@@ -105,7 +105,6 @@ function obtenerProductosLocalStorage()
     return productosLS;
 }
 
-//pinta los cursos desde LS en el carrito
 function leerLS() 
 {
     let productosLS;
