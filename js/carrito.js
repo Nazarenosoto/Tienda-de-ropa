@@ -118,7 +118,7 @@ function leerLS()
         <td><img src="${producto.imagen}" width="100"></td>
         <td>${producto.titulo}</td>
         <td>${producto.precio}</td>
-        <td><a href="#" class="borrar-producto" data-id="${producto.id}">X</a></td>    
+        <td><a href="#" class="borrar-producto text-decoration-none" data-id="${producto.id}">❌</a></td>    
     `;
         listaProductos.appendChild(row);
 
@@ -129,7 +129,7 @@ function leerLS()
 function eliminarProductoLS(producto) 
 {
     let productosLS;
-    productosLS = obtenerCursosLocalStorage();
+    productosLS = obtenerProductosLocalStorage();
     productosLS.forEach(function(productoLS, index) {
     if (productoLS.id === producto) {
         productosLS.splice(index, 1);

@@ -1,5 +1,4 @@
 html {
-    font-family: sans-serif; 
     -ms-text-size-adjust: 100%; 
     -webkit-text-size-adjust: 100%; 
   }
@@ -8,35 +7,8 @@ html {
     margin: 0;
   }
   
-  
-  article,
-  aside,
-  details,
-  figcaption,
-  figure,
-  footer,
-  header,
-  hgroup,
-  main,
-  menu,
-  nav,
-  section,
-  summary {
-    display: block;
-  }
 
-  audio,
-  canvas,
-  progress,
-  video {
-    display: inline-block; 
-    vertical-align: baseline; 
-  }
-  
-  audio:not([controls]) {
-    display: none;
-    height: 0;
-  }
+
   
   [hidden],
   template {
@@ -499,19 +471,15 @@ html {
   
   }
   
-  
-  /* Base */
-  html {
-    font-size: 62.5%; }
+
   body {
     font-size: 1.5em;
     line-height: 1.6;
     font-weight: 400;
-    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222; }
   
   
-  /* Typography */
+   /*Typography */
   h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 2rem;
@@ -774,3 +742,57 @@ html {
   h4{
     font-size:25px;
   }
+.titulo{
+  color: #000;
+  font-family: 'Grape Nuts', cursive;
+}
+
+.contenedor_loader {
+  background-color: #f3f3f3;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  transition: all 1.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader, .loader::before, .loader::after {
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  animation: loader 1.7s infinite ease-in-out;
+}
+
+.loader {
+  color: #4585fa;
+  font-size: 13px;
+  position: relative;
+  animation-delay: -0.16s;
+}
+
+.loader::before, .loader::after {
+  content: "";
+  position: absolute;
+  top: 0;
+}
+
+.loader::before {
+  left: -3.5em;
+  animation-delay: -0.32s;
+}
+
+.loader::after {
+  left: 3.5em;
+}
+
+@keyframes loader {
+  0%, 80%, 100% {
+    box-shadow: 0 2.5em 0 -1.3em;
+  }
+  40% {
+    box-shadow: 0 2.5em 0 0;
+  }
+}
