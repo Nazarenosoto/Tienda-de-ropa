@@ -97,11 +97,7 @@ function guardarProductoLocalStorage(producto)
 function obtenerProductosLocalStorage() 
 {
     let productosLS;
-    if (localStorage.getItem('productos') === null) {
-        productosLS = [];        
-    } else {
-        productosLS = JSON.parse(localStorage.getItem('productos'));
-    }
+    localStorage.getItem('productos') === null ? productosLS = [] : productosLS = JSON.parse(localStorage.getItem('productos')) 
     return productosLS;
 }
 
@@ -131,9 +127,7 @@ function eliminarProductoLS(producto)
     let productosLS;
     productosLS = obtenerProductosLocalStorage();
     productosLS.forEach(function(productoLS, index) {
-    if (productoLS.id === producto) {
-        productosLS.splice(index, 1);
-    }
+    productoLS.id === producto && productosLS.splice(index, 1)
     });
 
     localStorage.setItem('productos', JSON.stringify(productosLS));
