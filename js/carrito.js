@@ -103,8 +103,8 @@ function obtenerProductosLocalStorage()
 
 function leerLS() 
 {
+    
     let productosLS;
-
     productosLS = obtenerProductosLocalStorage();
 
     productosLS.forEach(function (producto) {
