@@ -796,3 +796,81 @@ html {
     box-shadow: 0 2.5em 0 0;
   }
 }
+
+/*nav*/
+/*Nav*/
+.img-logo {
+  width: 230px;
+  margin-left: 15px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.busqueda {
+  margin-top: 25px;
+}
+
+.opciones {
+  margin-left: 2px;
+}
+.opciones img {
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  margin-right: 10px;
+  margin-left: 5px;
+  transition: all 400ms ease;
+  overflow: hidden;
+}
+.opciones img:hover {
+  transform: scale(1.2);
+}
+
+@media screen and (min-width: 360px) {
+  .opciones {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+  }
+  .logo {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 280px) {
+  .opciones {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+  }
+  .logo {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .logo {
+    text-align: center;
+  }
+}
+
+/*Footer*/
+.footer_top {
+  margin-top: 70px;
+}
+
+.titulo {
+  text-align: center;
+  justify-content: center;
+}
+.titulo a {
+  font-family: "Grape Nuts", cursive;
+  text-decoration: none;
+  font-size: 50px;
+  color: rgb(22, 22, 22);
+}
+.titulo a:hover {
+  color: rgb(95, 253, 180);
+  transition: 1.5s;
+}
