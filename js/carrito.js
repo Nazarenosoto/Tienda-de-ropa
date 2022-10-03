@@ -48,11 +48,20 @@ function insertarProducto(producto) {
         <td><img src="${producto.imagen}" width="100"></td>
         <td>${producto.titulo}</td>
         <td>${producto.precio}</td>
-        <td><a href="#" class="borrar-producto" data-id="${producto.id}">X</a></td>    
+        <td><a href="#" class="borrar-producto text-decoration-none" data-id="${producto.id}">❌</a></td>    
     `;
     listaProductos.appendChild(row);
     guardarProductoLocalStorage(producto);
 
+    //Codigo SweetAlert
+    Swal.fire({
+        title: "Has agregado este producto al carrito",
+        icon: "success",
+        confirmButtonText: ":D",
+        confirmButtonColor: "green",
+        timer: 1500,
+    
+    })
 }
 
 //eliminar Producto del carrito en el DOM
@@ -73,13 +82,21 @@ function eliminarProducto(e)
 //vacias Carrito
 function vaciarcarrito() 
 {
+    //Codigo SweetAlert
+    Swal.fire({
+        title: "Has vaciado el carrito",
+        icon: "info",
+        confirmButtonText: "OK",
+        timer: 2000,
+    })
     while(listaProductos.firstChild){
         listaProductos.removeChild(listaProductos.firstChild);
     }    
     //vaciar carrito  de LS
     vaciarLs();
 
-    return false;    
+    return false; 
+    
 }
 
 //almacenar productos al LS
@@ -138,3 +155,5 @@ function eliminarProductoLS(producto)
 function vaciarLs() {
     localStorage.clear();
 }
+
+//Alert SweetAlert
