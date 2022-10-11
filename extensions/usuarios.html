@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta property="og:tipe" content="website">
-    <meta property="og:title" content="ROPA IMPORTADA | ENTRE RIOS - ARGENTINA">
-    <meta property="og:description" content="Explora por nuestra pagina..."> 
-    <meta property="og:image" content="img/Captura1"> 
-    <meta property="og:name" content="Tienda de ropa online"> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/plane-alt-solid-24.png" type="image/x-icon">
-    <link rel="stylesheet" href="scss/style.scss">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Vendedores</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.scss">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <title>Tienda online</title>
 </head>
 <body class="container-fluid">
     <!--Efecto de carga-->
@@ -27,7 +20,7 @@
     <nav class="container margin">
         <div class="row">
             <div class="col-md-12 col-lg-3 col-sm-12 logo">
-                <a href="./index.html"><img src="./img/hero/Captura.JPG" alt="Logo" class="img-logo"></a>
+                <a href="../index.html"><img src="../img/hero/Captura.JPG" alt="Logo" class="img-logo"></a>
             </div>
             <div class="col-md-12 col-lg-6 col-sm-12">
                         <form class="d-flex busqueda" role="search">
@@ -36,41 +29,34 @@
                         </form>
             </div>
             <div class="col-md-12 col-lg-2 col-sm-12 col-xs-12 opciones">
-                <a href="./extensions/registrar.html"><img src="./img/icons/persona (2).png" alt="Registrar"></a>
-                <a href="#"><img src="./img/icons/me-gusta.png" alt="Favoritos"></a>
-                <a href="#"><img src="./img/icons/carrito-de-compras.png" alt="Carrito de compras"></a>
+                <a href="../extensions/registrar.html"><img src="../img/icons/persona (2).png" alt="Registrar"></a>
+                <a href="#"><img src="../img/icons/me-gusta.png" alt="Favoritos"></a>
+                <a href="#"><img src="../img/icons/carrito-de-compras.png" alt="Carrito de compras"></a>
             </div>
         </div>
     </nav>
     <!--Termina nav-->
 
-    <!--Empieza Hero-->
-    <div class="container">
-        <div class="text-center">
-        <a href="./extensions/registrar.html"><img src="./img/hero/Captura3.JPG" alt="" class="img-fluid hero"></a>
-        </div>
+    <!--Informacion del empleado-->
+    <section class="container infoEmple">
+    <div class="text-center">
+        <h3>Sobre nuestro empleado</h3>
     </div>
-    <!--Termina Hero-->
-
-    <!--Section 1-->
-    <section class="container-fluid">
-        <div class="row text-center">
-            <div class="col-md-6 col-lg-6 col-sm-6">
-                <a href="./extensions/venta.html"><img src="./img/hero/Captura5.jpg" alt="Vendé" class="img-fluid top" width="500px"></a>
-            </div>
-            <div class="col-md-6 col-lg-6 col-sm-6">
-                <a href="./extensions/compra.html"><img src="./img/hero/Captura4.jpg" alt="Comprá" class="img-fluid top" width="500px"></a>
-            </div>
-        </div>
+    <div class="container sobreEmple">
+        <div class="usuariosContainer text-center m-2"></div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-primary">Contactar</button>
+    </div>
+    <div>
+        <a href="#" class="infoA">¡Atencion!</a>
+        <p>
+        Solo las personas inscriptas a Nuestra pagina van a poder gosar de nuestro asesoramiento personalizado.
+        </p>
+    </div>
     </section>
-    <!--Termina Section 1-->
-
-        <!--Equipo de venta-->
-        <div class="usuariosContainer contenedorUsuarios">
-            <h3 class="text-center">Nuestro equipo de venta</h3>
-        </div>
-        <!--Termina equipo de ventas-->
-
+    <!--Termina informacion del empleado-->
+    
     <!--Empieza el footer-->
     <footer class="container-fluid footer_top">
         <!--Empieza div row-->
@@ -129,15 +115,8 @@
         <!--Termina div row-->
     </footer>
     <!--Termina el footer-->
-            <!--Los scrips-->
-            <script src="./js/fetch.js"></script>
-            <script src="./js/script.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-            <script>
-                AOS.init();
-            </script>
-            <!--Terminan Los scrips-->
-            
+    <script src="../js/usuarios.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -3,6 +3,7 @@ const productos = document.getElementById('lista-productos');
 const listaProductos = document.querySelector('#lista-carrito tbody')
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
 
+
 eventslisteners();
 
 function eventslisteners() 
@@ -15,6 +16,7 @@ function eventslisteners()
     vaciarCarritoBtn.addEventListener('click', vaciarcarrito);
 
     document.addEventListener('DOMContentLoaded', leerLS)
+
 
 }
 
@@ -156,4 +158,7 @@ function vaciarLs() {
     localStorage.clear();
 }
 
-//Alert SweetAlert
+//Finalizar Compra
+
+
+
