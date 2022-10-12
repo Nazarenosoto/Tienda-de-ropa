@@ -2,7 +2,7 @@ const carrito = document.getElementById('carrito');
 const productos = document.getElementById('lista-productos');
 const listaProductos = document.querySelector('#lista-carrito tbody')
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito');
-
+const compraFinalizada = document.querySelector('#finalizarCompra')
 
 eventslisteners();
 
@@ -17,6 +17,7 @@ function eventslisteners()
 
     document.addEventListener('DOMContentLoaded', leerLS)
 
+    compraFinalizada.addEventListener('click', finalizarCompra)
 
 }
 
@@ -100,6 +101,27 @@ function vaciarcarrito()
     return false; 
     
 }
+
+//Comprar producto
+function finalizarCompra(){
+    //Codigo SweetAlert
+    Swal.fire({
+        title: "Se han enviado detalles de la compra a tu correo",
+        icon: "success",
+        confirmButtonText: "OK",
+        timer: 2000,
+    })
+    while(listaProductos.firstChild){
+        listaProductos.removeChild(listaProductos.firstChild);
+    }    
+    //vaciar carrito  de LS
+    vaciarLs();
+
+    return false;
+}
+
+
+
 
 //almacenar productos al LS
 function guardarProductoLocalStorage(producto)
